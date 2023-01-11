@@ -1,0 +1,11 @@
+Week 1: Overview
+Network components
+Physical design
+-	One of the two types of designs, and consists of all physical devices and tech that communicate 
+-	Includes topology (the layout of devices and connections), end devices (for human/network interfaces), intermediary devices (for connections between physical machines such as switches, hubs, routers etc.) and network media (the channels by which messages or data travel)
+-	Icons to denote devices are industry standardized (check cisco icons for network components)
+-	Common devices include routers, firewalls, lan switches, IP phones, lan hubs, wireless access points, servers, wireless routers, desktop computers, lan media, wan media, laptop, wireless media
+
+Logical design
+-	The configuration of devices (routing), the IP addressing scheme, the bandwidth, TCP and OSI models, network addressing and protocols (set of rules to guide a communication)
+-	
