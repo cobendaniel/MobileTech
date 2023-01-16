@@ -1,0 +1,57 @@
+Week 2: OSI Model - The Application Layer
+The application layer
+ - For end-user applications
+ - Unlike other layers, there is a large degree of flexibility in terms of the number of protocols to choose from, and not all of them are required. Email clients for example, require a mail protocol whereas video apps do not 
+ - Application layer protocols provide the initial headers for user data. For example, in email protocols, sender and receiver email addresses are added to the email
+ - Accesses services from the transport layer to decide...
+    1. How conversations between two entities occur
+    2. Whether communication is connection-orientated or connectionless
+    3. What types of guarantees are made in regard to services
+    4. Type of security being applied 
+ - In the TCP/IP stack the app layer incorporates bits of the session and presentation layers of the OSI model. Not all layers of the OSI model are strictly used as the OSI model is a theoretical model designed to cover basic requirements / considerations of communications across a network, of which only some are practical.The TCP / IP stack is an implementation which is in use and has been demonstrated to be remarkably effective
+ - The main difference between the TCP / IP stack and the OSI model comes down to practicality vs theory
+ - There are 4 layers in the TCP / IP stack whereas there are 7 layers in the OSI model
+
+Network apps and services
+ - In both approaches, network applications and services are located at the top of the stack. Communication with lower layers is done through TCP and UDP ports. 
+ - The TCP / IP model's application layer encompasses the OSI model's application layer, presentation layer and session layer
+ - OSI application layer contains components that provide services to user applications and network access
+ - OSI presentation layer translates data into a neutral format and includes encryption and data compression
+ - OSI session layer manages communication between apps on networked devices (security / name recognition)
+
+Application Architectures
+ - One of the first things to be considered when designing net applications
+ - Two types of architectures: client / server, peer-2-peer (p2p)
+
+Client / Server 
+ - Where program is distributed between end user (client) and service (server)
+ - Enables multiple clients to utilize centralized services of the server 
+ - Server is constantly running applications, whereas clients will connect to server only when required
+ - Clients instigate communcation, servers respond to client requests
+
+Common client / server applications
+ 1. Online games
+ - Server provides communication between players and sends data to players machines to allow players to view each others' actions
+ - Client presents the local game screen and sends player actions as data to server and focuses on rendering local graphics
+ - Server acts as coordinator for all players and provides game logic and server data consisting of player actions
+
+2. Web browser
+ - Enables users to connect to multiple servers for different services
+ - Consists of an application that allows users to enter addresses, contact server and render files returned by the server
+ - Files are likely to be HTML files that provide users with interfaces for graphical interaction with services (e.g. Amazon)
+
+Peer-to-peer
+ - Does not require centralized servers, but instead is for direct communication between two devices
+ - A single application is usually distributed or replicated betweenmany devices, allowing two communications between applications
+ - There is no guarantee that the application is available 
+ - Peers are not always available
+ - Highly scalable and evolves on demand
+ - Any peer can instigate communications, but there is no guarantee that the application they are attempting to contact is available 
+
+Common P2P applications
+ 1. File Sharing
+ - One of the most common uses for P2P networks
+ - Peers have designated space on their machine where files made available using the P2P network are saved
+ - The application on the user's machine is capable of searching for and cataloguing files on other machines
+ - When required files are found, a direct connection between machines is established to download the file 
+ - This is basically what torrenting is 
